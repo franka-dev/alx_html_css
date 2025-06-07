@@ -1,37 +1,67 @@
-/* Enable Flexbox layout for body and main */
+/* Body layout: column with header, main, footer stacked */
 body {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f5;
+  color: #333;
 }
 
-/* Main is a row: it contains article and aside */
+/* Main layout: row with article and aside side-by-side */
 main {
   display: flex;
   flex-direction: row;
-  flex: auto; /* grow/shrink based on available space */
+  flex: auto;
+  height: 100%;
 }
 
-/* Article takes 2/3 of space */
-article {
-  flex: 2;
-  overflow-y: auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-}
-
-/* Aside takes 1/3 of space */
-aside {
-  flex: 1;
-  overflow-y: auto;
-  padding: 20px;
-  background-color: #e8e8e8;
-}
-
-/* Optional: style header and footer for clarity */
-header, footer {
-  background-color: #ddd;
+/* Header styling */
+header {
+  background-color: #004080;
+  color: white;
   padding: 20px;
   text-align: center;
+}
+
+/* Logo style inside header */
+.logo {
+  font-size: 2rem;
+  color: gold;
+  margin-right: 10px;
+  list-style: none;
+}
+
+/* Article takes 2/3 of the main area */
+article {
+  flex: 2;
+  background-color: #f9f9f9;
+  padding: 20px;
+  overflow-y: auto;
+  border-right: 1px solid #ccc;
+}
+
+/* Aside takes 1/3 of the main area */
+aside {
+  flex: 1;
+  background-color: #e6f0ff;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Optional list styling inside aside and article */
+aside ul, article ul {
+  padding-left: 20px;
+}
+
+aside li, article li {
+  margin-bottom: 8px;
 }
