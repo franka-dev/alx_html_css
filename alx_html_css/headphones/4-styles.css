@@ -1,4 +1,4 @@
-/* RESET + VARIABLES */
+/* RESET & VARIABLES */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@
   --max-width: 1000px;
 }
 
-/* GLOBAL */
+/* GLOBAL STYLES */
 body {
   font-family: var(--font-family);
   background-color: black;
@@ -50,7 +50,7 @@ body {
   color: var(--main-color);
 }
 
-/* HERO */
+/* HERO SECTION */
 .hero {
   background-image: url("images/headphones_hero_1.jpg");
   background-size: cover;
@@ -84,7 +84,7 @@ body {
   opacity: 0.9;
 }
 
-/* WHAT WE DO */
+/* WHAT WE DO SECTION */
 .what-we-do {
   text-align: center;
   padding: 60px 20px;
@@ -137,16 +137,6 @@ body {
   padding: 60px 20px;
 }
 
-.our-results h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.our-results .section-description {
-  font-size: 1.1rem;
-  margin-bottom: 40px;
-}
-
 .results {
   display: flex;
   flex-wrap: wrap;
@@ -173,17 +163,12 @@ body {
   margin: 0 auto 10px;
 }
 
-/* CONTACT */
+/* CONTACT SECTION */
 .contact {
   background-color: white;
   color: black;
   text-align: center;
   padding: 60px 20px;
-}
-
-.contact h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
 }
 
 .contact-form {
@@ -200,7 +185,6 @@ body {
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
-  resize: vertical;
 }
 
 .contact-form button {
@@ -216,6 +200,44 @@ body {
 .contact-form button:hover,
 .contact-form button:active {
   opacity: 0.9;
+}
+
+/* FOOTER SECTION */
+.footer {
+  background-color: black;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto 20px;
+}
+
+.footer-logo {
+  height: 30px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--main-color);
+}
+
+.footer-text {
+  font-size: 14px;
+  opacity: 0.6;
 }
 
 /* RESPONSIVE */
@@ -240,5 +262,10 @@ body {
 
   .result {
     margin-bottom: 30px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
   }
 }
