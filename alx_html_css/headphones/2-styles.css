@@ -140,7 +140,53 @@ body {
 }
 
 /* ================================
-   RESPONSIVE: MOBILE (<= 480px)
+   OUR RESULTS SECTION
+================================ */
+.our-results {
+  background-color: #f2f2f2;
+  color: black;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.our-results h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.our-results .section-description {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.result {
+  flex: 1 1 200px;
+  padding: 10px;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: var(--main-color);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+}
+
+/* ================================
+   RESPONSIVE STYLES (MOBILE)
 ================================ */
 @media screen and (max-width: 480px) {
   .site-header {
@@ -167,5 +213,14 @@ body {
 
   .features {
     grid-template-columns: 1fr;
+  }
+
+  .results {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .result {
+    margin-bottom: 30px;
   }
 }
