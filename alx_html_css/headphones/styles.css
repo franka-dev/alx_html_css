@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  body {
+    /* Adjust layout for mobile */
+  }
+}
+
+/* Link hover/active */
+a:hover, a:active {
+  color: #FF6565;
+}
+
+/* Button hover/active */
+button:hover, button:active {
+  opacity: 0.9;
+}
