@@ -1,6 +1,4 @@
-/* ================================
-   RESET STYLES AND VARIABLES
-================================ */
+/* RESET + VARIABLES */
 * {
   margin: 0;
   padding: 0;
@@ -14,9 +12,7 @@
   --max-width: 1000px;
 }
 
-/* ================================
-   GLOBAL STYLES
-================================ */
+/* GLOBAL */
 body {
   font-family: var(--font-family);
   background-color: black;
@@ -29,9 +25,7 @@ body {
   padding: 20px;
 }
 
-/* ================================
-   HEADER
-================================ */
+/* HEADER */
 .site-header {
   display: flex;
   justify-content: space-between;
@@ -56,9 +50,7 @@ body {
   color: var(--main-color);
 }
 
-/* ================================
-   HERO SECTION
-================================ */
+/* HERO */
 .hero {
   background-image: url("images/headphones_hero_1.jpg");
   background-size: cover;
@@ -92,9 +84,7 @@ body {
   opacity: 0.9;
 }
 
-/* ================================
-   WHAT WE DO SECTION
-================================ */
+/* WHAT WE DO */
 .what-we-do {
   text-align: center;
   padding: 60px 20px;
@@ -139,9 +129,7 @@ body {
   color: #333;
 }
 
-/* ================================
-   OUR RESULTS SECTION
-================================ */
+/* OUR RESULTS */
 .our-results {
   background-color: #f2f2f2;
   color: black;
@@ -185,30 +173,60 @@ body {
   margin: 0 auto 10px;
 }
 
-/* ================================
-   RESPONSIVE STYLES (MOBILE)
-================================ */
+/* CONTACT */
+.contact {
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 30px auto 0;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.contact-form button:hover,
+.contact-form button:active {
+  opacity: 0.9;
+}
+
+/* RESPONSIVE */
 @media screen and (max-width: 480px) {
   .site-header {
     flex-direction: column;
-    align-items: center;
     text-align: center;
   }
 
   .main-nav {
     margin-top: 10px;
-  }
-
-  .hero {
-    padding: 60px 10px;
-  }
-
-  .hero h1 {
-    font-size: 1.8rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
   }
 
   .features {
